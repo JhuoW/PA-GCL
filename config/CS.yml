@@ -1,0 +1,30 @@
+dataset: "CS" 
+epochs: 30
+tau: 0.1
+max_k: 10 
+min_k: 2
+learning_rate: 0.0005
+weight_decay: 0.0001
+dataset_path: '/data1/zhuowei/datasets/'
+selfloop: True
+hops: 3
+num_hidden: 512
+base_model: 'GCNConv'
+n_layers: 2
+stru_emb: 'wl'
+subgraph: 'k_hop'
+same_k: False
+num_proj_hidden: 512
+activation: 'elu'
+optimizer: 'adam'
+use_origin_graph: True
+input_graph: 'knn'
+grad_clipping: null
+edge_index_inverse: False
+positional_embedding_size: 200
+
+  
+  
+#Params: {'epochs': 30, 'tau': 0.1, 'learning_rate': 0.0005, 'weight_decay': 0.0001, 'selfloop': True, 'positional_embedding_size': 200, 'hops': 2, 'num_hidden': 512, 'base_model': 'GCNConv', 
+# 'n_layers': 2, 'stru_emb': 'wl', 'same_k': False, 'num_proj_hidden': 512, 'activation': 'elu', 'optimizer': 'adam', 'use_origin_graph': True, 'subgraph': 'k_hop', 
+# 'clamp': True, 'edge_index_inverse': False}

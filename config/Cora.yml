@@ -1,0 +1,343 @@
+# dataset: "Cora" 
+# epochs: 300
+# tau: 0.2
+# max_k: 10 
+# min_k: 2
+# learning_rate: 0.001
+# weight_decay: 0.0001
+# dataset_path: '/data1/zhuowei/datasets/'
+# selfloop: True
+# hops: 2
+# num_hidden: 256
+# base_model: 'GATConv'
+# n_layers: 2
+# stru_emb: 'wl'
+# subgraph: 'k_hop'
+# same_k: False
+# num_proj_hidden: 256
+# activation: 'elu'
+# optimizer: 'adam'
+# use_origin_graph: True
+# input_graph: 'knn'
+# grad_clipping: null
+# edge_index_inverse: False
+
+#Params: {'activation': 'elu', 'base_model': 'GATConv', 'edge_index_inverse': False, 'epochs': 100, 'hops': 2, 'learning_rate': 0.001, 
+# 'n_layers': 2, 'num_hidden': 256, 'num_proj_hidden': 128, 'optimizer': 'adam', 'same_k': False, 'selfloop': True, 'stru_emb': 'wl',
+# 'subgraph': 'k_hop', 'tau': 0.2, 'use_origin_graph': True, 'weight_decay': 0.0001}
+
+# old 错误的struc knn
+# dataset: "Cora" 
+# epochs: 200
+# tau: 0.1
+# max_k: 10 
+# min_k: 2
+# learning_rate: .0005
+# weight_decay: 0.005
+# dataset_path: '/data1/zhuowei/datasets/'
+# selfloop: True
+# hops: 3
+# num_hidden: 512
+# base_model: 'GATConv'
+# n_layers: 2
+# stru_emb: 'wl'
+# subgraph: 'k_hop'
+# same_k: False
+# num_proj_hidden: 128
+# activation: 'leaky_relu'
+# optimizer: 'adam'
+# use_origin_graph: True
+# input_graph: 'knn'
+# grad_clipping: null
+# edge_index_inverse: False
+
+
+#  Trial# 626
+#     Values: F1Mi=0.8470057424118129, F1Ma=0.8281768858053683
+#     Params: {'activation': 'elu', 'base_model': 'GATConv', 'edge_index_inverse': False, 'epochs': 50, 'last_act': True, 'learning_rate': 0.0005, 'n_layers': 2, 'num_hidden': 512, 
+#     'num_proj_hidden': 128, 'optimizer': 'adam', 'same_k': False, 'selfloop': True, 'stru_emb': 'wl', 'subgraph': 'k_hop', 'tau': 0.1, 'use_origin_graph': True, 'weight_decay': 5e-05}
+
+# dataset: "Cora" 
+# epochs: 50
+# tau: 0.1
+# max_k: 6 
+# min_k: 2
+# learning_rate: .0005
+# weight_decay: 0.00005
+# dataset_path: '/data1/zhuowei/datasets/'
+# selfloop: True
+# hops: 3
+# num_hidden: 512
+# base_model: 'GATConv'
+# n_layers: 2
+# stru_emb: 'wl'
+# subgraph: 'k_hop'
+# same_k: False
+# num_proj_hidden: 128
+# activation: 'elu'
+# optimizer: 'adam'
+# use_origin_graph: True
+# input_graph: 'knn'
+# grad_clipping: null
+# edge_index_inverse: False
+# last_act: True
+
+#  Trial# 190
+#     Values: F1Mi=0.8241728192507519, F1Ma=0.8088865146231189
+#     Params: {'epochs': 60, 'tau': 0.2, 'learning_rate': 0.0005, 'weight_decay': 5e-05, 'selfloop': True, 'num_hidden': 512, 'base_model': 'GATConv', 'n_layers': 2, 
+#     'stru_emb': 'wl', 'same_k': False, 'num_proj_hidden': 128, 'activation': 'PReLU', 'optimizer': 'adam', 'use_origin_graph': True, 'subgraph': 'k_hop', 'last_act': True, 
+#     'edge_index_inverse': False}
+
+
+
+# Values: F1Mi=0.8381186765108012, F1Ma=0.823314629524046
+# Params: {'activation': 'elu', 'base_model': 'GATConv', 'edge_index_inverse': False, 'epochs': 60, 'last_act': True, 
+# 'learning_rate': 0.0005, 'n_layers': 2, 'num_hidden': 512, 
+# 'num_proj_hidden': 512, 'optimizer': 'adam', 'same_k': False, 'selfloop': True, 'stru_emb': 'wl', 'subgraph': 'k_hop', 'tau': 0.2,
+#  'use_origin_graph': True, 'weight_decay': 5e-05}
+
+# dataset: "Cora" 
+# epochs: 60
+# tau: 0.2
+# max_k: 10
+# min_k: 2
+# learning_rate: .0005
+# weight_decay: 0.00005
+# dataset_path: '/data1/zhuowei/datasets/'
+# selfloop: True
+# hops: 3
+# num_hidden: 512
+# base_model: 'GATConv'
+# n_layers: 2
+# stru_emb: 'wl'
+# subgraph: 'k_hop'
+# same_k: False
+# num_proj_hidden: 512
+# activation: 'elu'
+# optimizer: 'adam'
+# use_origin_graph: True
+# input_graph: 'knn'
+# grad_clipping: null
+# edge_index_inverse: False
+# last_act: True
+
+
+#  Trial# 221
+#     Values: F1Mi=0.839622641509434, F1Ma=0.8253977137883074
+#     Params: {'activation': 'PReLU', 'base_model': 'GATConv', 'edge_index_inverse': False, 'epochs': 100, 'last_act': True, 'learning_rate': 0.0005, 'n_layers': 2, 'num_hidden': 512, 
+#     'num_proj_hidden': 128, 'optimizer': 'adam', 'same_k': False, 'selfloop': True, 'stru_emb': 'wl', 'subgraph': 'k_hop', 'tau': 0.2, 'use_origin_graph': True, 'weight_decay': 0.0005}
+#  Trial# 362
+#     Values: F1Mi=0.8412633305988515, F1Ma=0.8249007242328247
+#     Params: {'activation': 'elu', 'base_model': 'GCNConv', 'edge_index_inverse': False, 'epochs': 30, 'last_act': True, 'learning_rate': 0.001, 'n_layers': 2, 
+#     'num_hidden': 512, 'num_proj_hidden': 256, 'optimizer': 'adam', 'same_k': False, 'selfloop': True, 'stru_emb': 'wl', 'subgraph': 'k_hop', 'tau': 0.1, 'use_origin_graph': True,
+#      'weight_decay': 5e-05}
+
+# 0.8379+-0.0046Macro = 0.8229+-0.0049  20次
+# dataset: "Cora" 
+# epochs: 100
+# tau: 0.2
+# max_k: 10
+# min_k: 2
+# learning_rate: .0005
+# weight_decay: 0.0005
+# dataset_path: '/data1/zhuowei/datasets/'
+# selfloop: True
+# hops: 3
+# num_hidden: 512
+# base_model: 'GATConv'
+# n_layers: 2
+# stru_emb: 'wl'
+# subgraph: 'k_hop'
+# same_k: False
+# num_proj_hidden: 128
+# activation: 'PReLU'
+# optimizer: 'adam'
+# use_origin_graph: True
+# input_graph: 'knn'
+# grad_clipping: null
+# edge_index_inverse: False
+# last_act: True
+
+
+# 0.8401+-0.0058Macro = 0.8271+-0.0061(
+# 0.8407+-0.0047Macro = 0.8273+-0.0050
+# dataset: "Cora" 
+# epochs: 100
+# tau: 0.1
+# max_k: 10
+# min_k: 2
+# learning_rate: .0005
+# weight_decay: 0.00005
+# dataset_path: '/data1/zhuowei/datasets/'
+# selfloop: True
+# hops: 3
+# num_hidden: 512
+# base_model: 'GATConv'
+# n_layers: 2
+# stru_emb: 'wl'
+# subgraph: 'k_hop'
+# same_k: False
+# num_proj_hidden: 256
+# activation: 'PReLU'
+# optimizer: 'adam'
+# use_origin_graph: True
+# input_graph: 'knn'
+# grad_clipping: null
+# edge_index_inverse: False
+# last_act: True
+
+
+
+#  {'epochs': 100, 'tau': 0.1, 'learning_rate': 0.001, 'weight_decay': 5e-05, 'selfloop': True, 'num_hidden': 512, 'base_model': 'GATConv', 'n_layers': 2, 'stru_emb': 'wl', 
+# 'same_k': False, 'num_proj_hidden': 128, 'activation': 'leaky_relu', 'optimizer': 'adam', 'use_origin_graph': True, 'subgraph': 'k_hop', 
+# 'last_act': True, 'edge_index_inverse': False}
+
+# dataset: "Cora" 
+# epochs: 100
+# tau: 0.1
+# max_k: 10
+# min_k: 2
+# learning_rate: 0.001
+# weight_decay: 0.00005
+# dataset_path: '/data1/zhuowei/datasets/'
+# selfloop: True
+# hops: 3
+# num_hidden: 512
+# base_model: 'GATConv'
+# n_layers: 2
+# stru_emb: 'wl'
+# subgraph: 'k_hop'
+# same_k: False
+# num_proj_hidden: 128
+# activation: 'leaky_relu'
+# optimizer: 'adam'
+# use_origin_graph: True
+# input_graph: 'knn'
+# grad_clipping: null
+# edge_index_inverse: False
+# last_act: True
+
+
+
+#  Trial# 982
+#     Values: F1Mi=0.8474159146841673, F1Ma=0.8342262741889472
+#     Params: {'activation': 'relu', 'base_model': 'GATConv', 'edge_index_inverse': False, 'epochs': 100, 'last_act': True, 'learning_rate': 0.0005, 'n_layers': 2, 'num_hidden': 512, 
+#     'num_proj_hidden': 128, 'optimizer': 'adam', 'same_k': False, 'selfloop': True, 'stru_emb': 'wl', 'subgraph': 'k_hop', 'tau': 0.2, 
+#     'use_origin_graph': True, 'weight_decay': 0.0005}
+
+#Acc = 0.8384+-0.0031Macro = 0.8245+-0.0040
+# dataset: "Cora" 
+# epochs: 100
+# tau: 0.2
+# max_k: 10
+# min_k: 2
+# learning_rate: 0.0005
+# weight_decay: 0.0005
+# dataset_path: '/data1/zhuowei/datasets/'
+# selfloop: True
+# hops: 3
+# num_hidden: 512
+# base_model: 'GATConv'
+# n_layers: 2
+# stru_emb: 'wl'
+# subgraph: 'k_hop'
+# same_k: False
+# num_proj_hidden: 128
+# activation: 'relu'
+# optimizer: 'adam'
+# use_origin_graph: True
+# input_graph: 'knn'
+# grad_clipping: null
+# edge_index_inverse: False
+# last_act: True
+
+
+
+#  Trial# 1831
+    # Values: F1Mi=0.8535684987694832, F1Ma=0.8402522905770502
+    # Params: {'activation': 'PReLU', 'base_model': 'GATConv', 'edge_index_inverse': False, 'epochs': 100, 'last_act': True, 'learning_rate': 0.0005, 'n_layers': 2, 'num_hidden': 512, 
+    # 'num_proj_hidden': 128, 'optimizer': 'adam', 'same_k': False, 'selfloop': True, 'stru_emb': 'wl', 'subgraph': 'k_hop', 'tau': 0.1, 'use_origin_graph': True, 'weight_decay': 5e-05}
+
+# dataset: "Cora" 
+# epochs: 100
+# tau: 0.1
+# max_k: 10
+# min_k: 2
+# learning_rate: .0005
+# weight_decay: 0.00005
+# dataset_path: '/data1/zhuowei/datasets/'
+# selfloop: True
+# hops: 3
+# num_hidden: 512
+# base_model: 'GATConv'
+# n_layers: 2
+# stru_emb: 'wl'
+# subgraph: 'k_hop'
+# same_k: False
+# num_proj_hidden: 128
+# activation: 'PReLU'
+# optimizer: 'adam'
+# use_origin_graph: True
+# input_graph: 'knn'
+# grad_clipping: null
+# edge_index_inverse: False
+# last_act: True
+
+# best_1
+# dataset: "Cora" 
+# epochs: 100
+# tau: 0.1
+# max_k_f: 8
+# min_k_f: 5
+# max_k_s: 2
+# min_k_s: 1
+# learning_rate: .0005
+# weight_decay: 0.00005
+# dataset_path: '/data1/zhuowei/datasets/'
+# selfloop: True
+# hops: 3
+# num_hidden: 512
+# base_model: 'GATConv'
+# n_layers: 2
+# stru_emb: 'wl'
+# subgraph: 'k_hop'
+# same_k: False
+# num_proj_hidden: 256
+# activation: 'PReLU'
+# optimizer: 'adam'
+# use_origin_graph: True
+# input_graph: 'knn'
+# grad_clipping: null
+# edge_index_inverse: False
+# last_act: True
+
+
+# 0.8401+-0.0057 Final Macro = 0.8278+-0.0070
+# 0.8408+-0.0059 0.8278+-0.0073
+# best_2
+dataset: "Cora" 
+epochs: 100
+tau: 0.2
+max_k_f: 8
+min_k_f: 5
+max_k_s: 2
+min_k_s: 1
+learning_rate: .0005
+weight_decay: 0.00005
+dataset_path: '/data1/zhuowei/datasets/'
+selfloop: True
+hops: 3
+num_hidden: 512
+base_model: 'GATConv'
+n_layers: 2
+stru_emb: 'wl'
+subgraph: 'k_hop'
+same_k: False
+num_proj_hidden: 256
+activation: 'PReLU'
+optimizer: 'adam'
+use_origin_graph: True
+input_graph: 'knn'
+grad_clipping: null
+edge_index_inverse: False
+last_act: True

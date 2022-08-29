@@ -1,0 +1,10 @@
+networkx==2.5
+joblib==0.17.0
+scipy==1.6.3
+torch==1.7.1
+lshknn==0.1.2
+numpy==1.20.3
+torch_geometric==1.6.3
+tqdm==4.50.2
+PyYAML==5.4.1
+scikit_learn==0.24.2

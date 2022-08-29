@@ -1,0 +1,152 @@
+# dataset: "CiteSeer" 
+# epochs: 150
+# tau: 0.2
+# max_k: 10 
+# min_k: 2
+# learning_rate:  0.001
+# weight_decay: 0.0005
+# dataset_path: '/data1/zhuowei/datasets/'
+# selfloop: True
+# hops: 3
+# num_hidden: 256
+# base_model: 'GATConv'
+# n_layers: 2
+# stru_emb: 'wl'
+# subgraph: 'k_hop'
+# same_k: False
+# num_proj_hidden: 64
+# activation: 'elu'
+# optimizer: 'adam'
+# use_origin_graph: True
+# input_graph: 'knn'
+# grad_clipping: null
+# edge_index_inverse: False
+
+
+
+#  Trial# 796
+#     Values: F1Mi=0.7315525876460768, F1Ma=0.6918807633571483
+#     Params: {'activation': 'elu', 'base_model': 'GATConv', 'edge_index_inverse': False, 'epochs': 50, 'last_act': True, 'learning_rate': 0.0005, 'n_layers': 2, 
+#     'num_hidden': 512, 'num_proj_hidden': 256, 'optimizer': 'adam', 'same_k': False, 'selfloop': True, 'stru_emb': 'wl', 'subgraph': 'k_hop', 'tau': 0.2, 'use_origin_graph': True,
+#      'weight_decay': 0.0005}
+#  Trial# 832
+#     Values: F1Mi=0.7338898163606011, F1Ma=0.678608091118083
+#     Params: {'activation': 'elu', 'base_model': 'GATConv', 'edge_index_inverse': False, 'epochs': 50, 'last_act': True, 'learning_rate': 0.0005, 'n_layers': 2, 'num_hidden': 512, 
+#     'num_proj_hidden': 64, 'optimizer': 'adam', 'same_k': False, 'selfloop': True, 'stru_emb': 'wl', 'subgraph': 'k_hop', 'tau': 0.2, 'use_origin_graph': True, 'weight_decay': 0.005}
+
+#  Trial# 796
+#     Values: F1Mi=0.7315525876460768, F1Ma=0.6918807633571483
+#     Params: {'activation': 'elu', 'base_model': 'GATConv', 'edge_index_inverse': False, 'epochs': 50, 'last_act': True, 'learning_rate': 0.0005, 'n_layers': 2, 'num_hidden': 512, 
+#     'num_proj_hidden': 256, 'optimizer': 'adam', 'same_k': False, 'selfloop': True, 'stru_emb': 'wl', 'subgraph': 'k_hop', 'tau': 0.2, 'use_origin_graph': True, 'weight_decay': 0.0005}
+
+# Acc = 0.7252+-0.0025Macro = 0.6781+-0.0054
+# Acc = 0.7183+-0.0065 20次
+# dataset: "CiteSeer" 
+# epochs: 50
+# tau: 0.2
+# max_k: 10 
+# min_k: 2
+# learning_rate:  0.0005
+# weight_decay: 0.005
+# dataset_path: '/data1/zhuowei/datasets/'
+# selfloop: True
+# hops: 3
+# num_hidden: 512
+# base_model: 'GATConv'
+# n_layers: 2
+# stru_emb: 'wl'
+# subgraph: 'k_hop'
+# same_k: False
+# num_proj_hidden: 64
+# activation: 'elu'
+# optimizer: 'adam'
+# use_origin_graph: True
+# input_graph: 'knn'
+# grad_clipping: null
+# edge_index_inverse: False
+# last_act: True
+
+# 0.7219+-0.0117Macro = 0.7219+-0.0117  20次
+# dataset: "CiteSeer" 
+# epochs: 50
+# tau: 0.6
+# max_k: 10 
+# min_k: 2
+# learning_rate:  0.0005
+# weight_decay: 0.0005
+# dataset_path: '/data1/zhuowei/datasets/'
+# selfloop: True
+# hops: 3
+# num_hidden: 512
+# base_model: 'GATConv'
+# n_layers: 2
+# stru_emb: 'wl'
+# subgraph: 'k_hop'
+# same_k: False
+# num_proj_hidden: 256
+# activation: 'elu'
+# optimizer: 'adam'
+# use_origin_graph: True
+# input_graph: 'knn'
+# grad_clipping: null
+# edge_index_inverse: False
+# last_act: True
+
+
+#     Params: {'activation': 'elu', 'base_model': 'GATConv', 'edge_index_inverse': False, 'epochs': 50, 'last_act': True, 'learning_rate': 0.0005, 'n_layers': 2, 'num_hidden': 512, 
+#'num_proj_hidden': 64, 'optimizer': 'adam', 'same_k': False, 'selfloop': True, 'stru_emb': 'wl', 'subgraph': 'k_hop', 'tau': 0.2, 'use_origin_graph': True, 'weight_decay': 0.005}
+# 0.7269+-0.0000Macro = 0.6631+-0.0000
+#  0.7235+-0.0000Macro = 0.6657+-0.0000
+# 0.7249+-0.0000Macro = 0.6658+-0.0000
+#  0.7295+-0.0000Macro = 0.6832+-0.0000
+dataset: "CiteSeer" 
+epochs: 50
+tau: 0.2   
+max_k:  5
+min_k: 4
+learning_rate:  0.0005
+weight_decay: 0.005
+dataset_path: '/data1/zhuowei/datasets/'
+selfloop: True
+hops: 3
+num_hidden: 512
+base_model: 'GATConv'
+n_layers: 2
+stru_emb: 'wl'
+subgraph: 'k_hop'
+same_k: False
+num_proj_hidden: 64
+activation: 'elu'
+optimizer: 'adam'
+use_origin_graph: True
+input_graph: 'knn'
+grad_clipping: null
+edge_index_inverse: False
+last_act: True
+
+
+
+# dataset: "CiteSeer" 
+# epochs: 50
+# tau: 0.2   
+# max_k:  10
+# min_k: 2
+# learning_rate:  0.0005
+# weight_decay: 0.0005
+# dataset_path: '/data1/zhuowei/datasets/'
+# selfloop: True
+# hops: 3
+# num_hidden: 512
+# base_model: 'GATConv'
+# n_layers: 2
+# stru_emb: 'wl'
+# subgraph: 'k_hop'
+# same_k: False
+# num_proj_hidden: 256
+# activation: 'elu'
+# optimizer: 'adam'
+# use_origin_graph: True
+# input_graph: 'knn'
+# grad_clipping: null
+# edge_index_inverse: False
+# last_act: True
